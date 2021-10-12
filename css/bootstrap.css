@@ -519,8 +519,8 @@ mark,
   max-width: 100%;
   height: 18rem;
   width: 18rem;
-  margin-top: -9rem;
-  margin-left: -20rem;
+  margin-top: -1rem;
+  margin-left: -24rem;
   z-index: 100;
 }
 
@@ -614,6 +614,14 @@ pre code {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+
+
 
 
 .container-fluid {
@@ -652,8 +660,7 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  
 }
 
 .col {
@@ -4104,7 +4111,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.75rem 1.75rem;
+  padding: 0.7rem 1.75rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4213,9 +4220,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  
+  line-height: 25px;
   font-size: 35px;
-  line-height: inherit;
   white-space: nowrap;
   font-family: gilroyBold;
 }
@@ -4399,6 +4405,7 @@ input[type="button"].btn-block {
     flex-wrap: nowrap;
   }
   .navbar-expand-lg .navbar-collapse {
+    padding-left: 1rem;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
@@ -4628,6 +4635,10 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  font-family: 'nexaBold';
+  
+    color: #25234d;
+    font-size: 1rem;
 }
 
 .card-subtitle {
@@ -5368,6 +5379,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 .media-body {
   -ms-flex: 1;
   flex: 1;
+  color: #25234d;
+  font-size: small;
+  opacity: 0.81;
 }
 
 .list-group {
