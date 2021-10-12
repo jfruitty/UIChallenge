@@ -202,6 +202,36 @@ a.white {
 	background-color: transparent;
 	color: #00dadc;
 	text-decoration: none;
+	cursor:pointer;
+}
+
+.btn-circle {
+	font-size: small;
+	display: inline-block;
+	margin-top: 0.25rem;
+    margin-right: 0.45rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0.55rem;
+	padding-top: 8px;
+    padding-right: 10.5px;
+    padding-bottom: 8px;
+    padding-left: 10.5px;
+	border: 0.125rem solid #4c4c4c;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #4c4c4c;
+	text-decoration: none;
+	transition: all 0.2s;
+	z-index: 99;
+	line-height: 1rem;
+}
+
+.btn-circle:hover {
+	border-color: #00dadc;
+	background-color: #00dadc;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer !important;
 }
 
 .btn-solid-lg:hover {
@@ -1470,6 +1500,18 @@ input[type='checkbox'] {
 	color: #fff;
 }
 
+@media (max-width: 768px) {
+	.footer .logo{
+		display: flex !important;
+		justify-content: center;
+		padding-bottom: 1.2rem;
+	}
+
+	.footer .mid{
+		padding-bottom: 1.2rem;
+	}
+}
+
 .footer-link{
 	color: #fff;
     opacity: 0.8;
@@ -1643,6 +1685,12 @@ a:hover.back-to-top {
 	background-color: #f9fafc;
 }
 
+.footer .last {
+	
+	justify-content: center;
+}
+
+
 /*****************************/
 
 /*     20. Media Queries     */
@@ -1739,6 +1787,12 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of extra pages */
+
+	.footer .footer-col.last {
+		margin-bottom: 0 !important;
+		margin-right: 0;
+		margin-left: auto;
+	}
 }
 
 /* end of min-width width 768px */
@@ -1971,6 +2025,12 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of extra pages */
+
+	.footer .footer-col.last {
+		margin-bottom: 0 !important;
+		margin-right: 0;
+		margin-left: auto;
+	}
 }
 
 /* end of min-width width 992px */
@@ -2291,7 +2351,7 @@ a:hover.back-to-top {
 	max-width: 100%;
 	height: 25.5rem;
 	width: 25.5rem;
-	margin-left: 27rem;
+	margin-left: 28rem;
 	margin-top: -18%;
 	z-index: 100
 }
@@ -2329,8 +2389,8 @@ a:hover.back-to-top {
 	max-width: 100%;
 	height: 18rem;
 	width: 18rem;
-	margin-top: -9rem;
-	margin-left: -20rem;
+	margin-top: -1rem;
+    margin-left: -23rem;
 	z-index: 100;
   }
 
@@ -2403,3 +2463,8 @@ font-family: nexaLight;
 	font-family: nexaBold;
 
 }
+
+* { box-sizing: inherit; }
+html, body { box-sizing: border-box; background: #ddd; }
+
+
