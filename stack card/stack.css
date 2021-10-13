@@ -6,17 +6,9 @@
   box-sizing: border-box;
 }
 
-
-
-.stack {
-  width: 200px;
-  height: 500px;
-  position: relative;
-}
-
-.card {
-  width: 80%;
-  min-height: 40%;
+.stackcard {
+  width: 90%;
+  height: 80%;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -30,31 +22,44 @@
   transition: transform 300ms;
 }
 
-.card:nth-last-child(n + 4) {
-  --y: calc(-50% + +30px);
-  transform: translate(-50%, var(--y)) scale(0.9);
+.stackcard:nth-last-child(3) {
+  --y: calc(-60% + 60px);
+  transform: translate(-50%, var(--y)) scale(0.8);
   box-shadow: 0 0 1px 1px #00000003;
+  background-color: #fff;
+  opacity: 0.2;
 }
-.card:nth-last-child(3) {
-  --y: calc(-50% + +15px);
-  transform: translate(-50%, var(--y)) scale(0.95);
+.stackcard:nth-last-child(2) {
+  --y: calc(-60% + 30px);
+  transform: translate(-50%, var(--y)) scale(0.9);
+  background-color: #9a76ec;
+  opacity: 0.5;
 }
-.card:nth-last-child(2) {
-  --y: calc(-50%);
+.stackcard:nth-last-child(1) {
+  --y: calc(-60%);
   transform: translate(-50%, var(--y)) scale(1);
 }
-.card:nth-last-child(1) {
-  --y: calc(-50% - 15px);
-  transform: translate(-50%, var(--y)) scale(1.05);
+
+@keyframes next {
+  50% {
+    transform: translate(-50%, calc(var(--y) - 280px)) scale(0.85) rotate(-5deg);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate(-50%, calc(var(--y) + 150px)) scale(0.85) rotate(5deg);
+    opacity: 0.85;
+    z-index: 2;
+  }
 }
 
 @keyframes swap {
   50% {
-    transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
+    transform: translate(-50%, calc(var(--y) - 400px)) scale(0.95) rotate(-5deg);
     animation-timing-function: ease-in;
   }
   100% {
-    transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
-    z-index: -1;
+    transform: translate(-50%, calc(var(--y) + 1500px)) scale(0.85) rotate(5deg);
+    opacity: 1;
+    z-index: 2;
   }
 }
