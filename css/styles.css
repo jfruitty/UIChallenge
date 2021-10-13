@@ -1019,6 +1019,7 @@ input[type='checkbox'] {
 /**********************************/
 
 .lightbox-basic {
+	max-width: 36.5rem;
 	margin: 2.5rem auto;
 	padding: 2rem 1.5rem 2rem 1.5rem;
 	border-radius: 0.25rem;
@@ -1081,7 +1082,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .btn-solid-reg.mfp-close:hover {
-	color: #6e7dfd;
+	color: #ffc727;
 }
 
 /* end of signup Button */
@@ -1950,7 +1951,7 @@ a:hover.back-to-top {
 	}
 	/* Details Lightboxes */
 	.lightbox-basic {
-		max-width: 62.5rem;
+		
 		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 	}
 	.lightbox-basic .image-container {
@@ -2466,6 +2467,27 @@ font-family: nexaLight;
 	font-family: nexaBold;
 
 }
+
+.modalbrand .fa-stack .fa-stack-2x{
+		font-size: 32px;
+		align-items: center;
+		color: #6e7dfd;
+		transition: all 0.2s ease;
+		
+
+		
+}
+
+.modalbrand .fa-stack .fa-stack-1x {
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.modal-img{
+	max-height: 10rem;
+}
+
 
 
 
