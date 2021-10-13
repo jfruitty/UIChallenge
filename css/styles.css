@@ -99,7 +99,7 @@ a.white {
 
 .test-card {
 	width: 32rem;
-	height: 19rem;
+	height: 20rem;
 	border-radius: 20px;
 	filter: drop-shadow(0px 30px 35px rgba(103, 48, 226, 0.5));
 	background-color: #ffffff;
@@ -116,10 +116,11 @@ a.white {
 
 .test-text {
 	margin-top: 0.5rem;
-	padding-top: 3.5rem;
+	padding-top: 3rem;
     padding-right: 4rem;
     padding-bottom: 2rem;
     padding-left: 4rem;
+	line-height: 28px;
 	color: #6a697f;
 
 	background-image: url('../images/testtextbg.svg');
@@ -131,6 +132,7 @@ a.white {
 .test-name {
 	color: #6427de;
 	font-family: nexaBold;
+	letter-spacing: 1.5px;
 }
 
 
@@ -1269,7 +1271,7 @@ input[type='checkbox'] {
 }
 
 .slider-2 h2 {
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
 	text-align: center;
 }
 
@@ -2397,8 +2399,8 @@ a:hover.back-to-top {
   .img-fluid-people1 {
 	position: relative;
     max-width: 6rem;
-    left: 1rem;
-    top: 13.5rem;
+    left: 3rem;
+    top: 14.2rem;
     z-index: 1;
 }
 .img-fluid-people2 {
@@ -2420,7 +2422,7 @@ a:hover.back-to-top {
 	position: relative;
     max-width: 7.75rem;
     left: 2rem;
-    top: 12.5rem;
+    top: 13.5rem;
     z-index: 1;
 }
 .img-fluid-people5 {
@@ -2441,8 +2443,9 @@ a:hover.back-to-top {
 .shape19 {
 	background-image: url('../images/Shape19.svg');
 	background-repeat: no-repeat;
-	background-size: 37.5rem;
+	background-size: 38.5rem;
 	background-position: center;
+	height: 21rem;
 
 }
 
