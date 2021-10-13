@@ -2473,10 +2473,15 @@ font-family: nexaLight;
 		align-items: center;
 		color: #6e7dfd;
 		transition: all 0.2s ease;
-		
-
-		
 }
+
+.modalbrand .fa-stack:hover .fa-stack-2x{
+	
+	color: #00dadc;
+	
+}
+
+
 
 .modalbrand .fa-stack .fa-stack-1x {
     font-size: 16px;
