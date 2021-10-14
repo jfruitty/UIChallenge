@@ -2531,10 +2531,14 @@ a:hover.back-to-top {
 	}
 
 	.footer{
-		padding-top: 2rem;
+		padding-top: 3rem;
 	}
 	.test-card {
 		min-width: 26rem !important;
 		
+	}
+
+	.footer .footer-col {
+		margin-bottom: 0rem;
 	}
 }
